@@ -8,6 +8,8 @@ use_git() -> commit files (ano obvykle)
 případně můžu založit nový projekt rovnou s novým git repo
 
 commit = jeden záznam o změně ("změnila jsem řádek 25"), zapsaný (po staged - připravený)
-musí mít commit message - popis změny
+musí mít commit message - popis změny, je dobrý psát smysluplné komentáře a ukládat to často
 
 SHA - unikátní ID commitu
+
+"diff" - rozdíl (ty barvy - červená smazáno, zelená přidáno)
