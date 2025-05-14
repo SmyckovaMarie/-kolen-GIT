@@ -13,3 +13,19 @@ musí mít commit message - popis změny, je dobrý psát smysluplné komentář
 SHA - unikátní ID commitu
 
 "diff" - rozdíl (ty barvy - červená smazáno, zelená přidáno)
+
+sdílení repa - můžu si ho stahnout bez dovolení obvykle (veřejné) a pak jsou role
+v Nastavení -> repositories - jsou tam i repa, kde mám přístup, ale nejsou moje
+
+smazání repa na GitHub v nastavení, úplně dole
+
+clonování repa z GitHub - Create New Project - Version Control - GIT - vložit adresu (zelené tlačítko code na GitHub)
+
+merge control - důležité! mít malé skripty a branche
+když se stane - musím PULL -> ukáží se dekorace a dvě verze mezi řadou rovnítek, musím dekorace a jednu verzi smazat, prostě všechno tak jak chci, aby to opravdu vypadalo
+
+oprava chyby - hotový commit, ale ne push (origin - to co je na Hub, head - to u mně)
+
+branch - paralelní reality dokud je nespojíme
+před přepnutím mezi branch/master a mezi branch musím uložit a comnitnout vše, ideálně i push, jinak o to přijdu 
+může to být jako pracovní verze kódu - main je čistý, běží, nepadá... na branch pracuju, pak je mažu, můžu zkoušet
