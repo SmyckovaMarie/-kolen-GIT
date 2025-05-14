@@ -1,0 +1,36 @@
+1. Stáhnout a nainstalovat GIT:
+https://gitforwindows.org/
+
+2. Stáhnout a nainstalovat R a RStudio Desktop z odkazù na adrese:
+https://posit.co/download/rstudio-desktop/
+
+3. Založit úèet na GITHUB pøípadnì použít stávající registraci.
+https://github.com/signup?source=form-home-signup&user_email=
+
+4. Otevøít pøíkazový øádek Windows (Start -> cmd) a zaregistrovat pøístupové údaje pomocí pøíkazù:
+git config --global user.name "Jmeno Prijmeni"
+git config --global user.email "jmeno.prijmeni@aopk.gov.cz"
+git config --global --list
+
+5. Otevøít RStudio a nainstalovat balíèek usethis:
+install.packages("usethis")
+
+6. Zadat pøíkaz pro zkontrolování údajù pro GIT:
+usethis::use_git()
+V pøípadì potøeby doplníme pøíkazem:
+usethis::use_git_config(user.name = "Jmeno Prijmeni", user.email = "jmeno.prijmeni@aopk.gov.cz")
+
+7. Vygenerujeme token - otevøou se stránky GITHUBu pro vygenerování tokenu.
+usethis::create_github_token()
+Klikneme na Generate token a zkopírujeme jej do RStudia.
+
+Pokud pøi vložení RStudio hlásí chybu, použijeme ruèní metodu:
+usethis::edit_r_environ()
+GITHUB_PAT=ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx (místo x doplníme token)
+
+8. Vyzkoušíme, zda funguje stažení z GITHUBu.
+usethis::create_from_github(
+repo_spec = "https://github.com/OndrejMottl/VersionControl-playground.git",
+destdir = "C:/temp",
+fork = FALSE
+)
